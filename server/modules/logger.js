@@ -1,8 +1,8 @@
-var loggly = require('loggly');
+//var loggly = require('loggly');
 var config = require('../config');
 
 var logglyClient = null;
-if (config.loggly) logglyClient = loggly.createClient(config.loggly.conf);
+//if (config.loggly) logglyClient = loggly.createClient(config.loggly.conf);
 
 var verbose = config.verbosity;
 
@@ -13,5 +13,5 @@ var verbose = config.verbosity;
 exports.log = function (msg, verbosity) {
     if (verbosity && verbosity > verbose) return;//don't log messages whose verbosity is greater than the current setting
     console.log(msg);
-    if (logglyClient) logglyClient.log(config.loggly.key, msg);
+    //if (logglyClient) logglyClient.log(config.loggly.key, msg);
 };

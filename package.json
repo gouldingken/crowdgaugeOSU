@@ -1,6 +1,6 @@
 {
-  "name": "crowdgauge",
-  "subdomain": "crowdgauge_demo",
+  "name": "osucrowdgauge",
+  "subdomain": "osucrowdgauge",
   "scripts": {
     "start": "index.js"
   },
